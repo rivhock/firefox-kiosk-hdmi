@@ -1,0 +1,20 @@
+# Arquivos de backup gerados pelo próprio script
+backup-kiosk*/
+*.tar.gz
+
+# Arquivos de editor
+*.swp
+*.swo
+*~
+.vscode/
+.idea/
+
+# Logs
+*.log
+
+# Arquivos do sistema
+.DS_Store
+Thumbs.db
+
+# Configurações pessoais (para não subir sua URL real)
+config-local.sh
