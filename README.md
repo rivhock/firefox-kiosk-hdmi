@@ -46,25 +46,25 @@ O script cuida de **toda a configuração** — da instalação de dependências
 ## 🔄 Como Funciona
 
 ```
-┌─────────────────────────────────────────────────────────┐
-│  🔌 Boot do sistema                                     │
-│         ↓                                               │
-│  ⚙️  systemd inicia firefox-kiosk.service               │
-│         ↓                                               │
-│  📜 kiosk-start.sh é executado:                         │
-│    1. Aguarda 5s o sistema de áudio estar pronto        │
-│    2. Define HDMI como saída padrão                     │
-│    3. Abre Firefox em modo kiosk                        │
-│    4. Aguarda 20s o carregamento da página              │
-│    5. Simula 3 cliques (libera autoplay)                │
-│    6. Move o áudio do Firefox para o HDMI               │
-│    7. Monitora continuamente os fluxos de áudio         │
-│         ↓                                               │
-│  ⏰ Todos os dias às 07:00 (timer):                     │
-│    firefox-restart.service reinicia o kiosk             │
-│         ↓                                               │
-│  🔁 O ciclo recomeça automaticamente                    │
-└─────────────────────────────────────────────────────────┘
+─────────────────────────────────────────────────────────
+  🔌 Boot do sistema                                     
+         ↓                                               
+  ⚙️  systemd inicia firefox-kiosk.service               
+         ↓                                               
+  📜 kiosk-start.sh é executado:                         
+    1. Aguarda 5s o sistema de áudio estar pronto        
+    2. Define HDMI como saída padrão                     
+    3. Abre Firefox em modo kiosk                        
+    4. Aguarda 20s o carregamento da página              
+    5. Simula 3 cliques (libera autoplay)                
+    6. Move o áudio do Firefox para o HDMI               
+    7. Monitora continuamente os fluxos de áudio         
+         ↓                                               
+  ⏰ Todos os dias às 07:00 (timer):                     
+    firefox-restart.service reinicia o kiosk             
+         ↓                                               
+  🔁 O ciclo recomeça automaticamente                    
+─────────────────────────────────────────────────────────
 ```
 
 ---
@@ -438,7 +438,7 @@ Se este projeto te ajudou, considere dar uma ⭐ no repositório!
 
 <div align="center">
 
-** "Meu ofício é andar no mundo a galope contra o vento tirando touro a trompada e égua xucra no tento"**
+ "Meu ofício é andar no mundo a galope contra o vento tirando touro a trompada e égua xucra no tento"
 
 [⬆ Voltar ao topo](#-firefox-kiosk--áudio-hdmi)
 
